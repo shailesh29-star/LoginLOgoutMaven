@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Welcome To Dashboard  :<%
+HttpSession s1 =request.getSession(false);
+out.println(s1.getAttribute("uname"));
+%> </h1>
+
+
+
+<a href="logout">Logout</a>
+</body>
+</html>
